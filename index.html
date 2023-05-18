@@ -14,11 +14,249 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@1,900&family=Unbounded:wght@800;900&display=swap" rel="stylesheet">
     <style>
+    /* Desing the navigation bar */
+#navbar{
+    display: flex;
+    margin-top: -12px;
+    margin-left: -8px;
+    align-items: center;
+   
+    position: sticky;
+    top: 0px;
+   color: black;
+   background-color: white;
+
+}
+.services-container{ 
+    padding-top: 102px;
+}
+
+/* Desing the logo */
+#logo{
+    margin: 34px 45px;
+   
+}
+/* Desing ima */
+#logo img{
+    height: 59px;
+    margin: -23px -22px
+ 
+}
+#navbar ul{
+    display: flex;
+    /* padding-left: 1px; */
     
+    /* padding-left: 1px; */
+    margin-top: 22px;
+}
+/* #navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    color: black;
+} */
+#navbar ul li{
+    list-style: none;
     
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
     
+
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 172px;
+}
+
+#home::before{
+    content: "";
+    background: url(/images/firstbg1.webp) no-repeat center center/cover;
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.9;
+    top: 85px;
+    left: 0px;
     
-    </style>
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rm;
+    font-family: 'Bree Serif', serif;
+}
+/* Services section */
+#services{
+    margin: -10px;
+    display: flex;
+    margin-top: -72px;
+    margin-bottom: 80px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(238, 249, 250);
+   
+}
+#services .box img{
+    height: 110px;
+    margin: auto;
+    display: block;
+    
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#services{}
+
+
+
+
+
+
+
+
+
+/* utility classes */
+.h-primary-center{
+    font-size: 2rem;
+    padding: 50px;
+    text-align: center;
+    margin-top: -35px;
+    
+
+}
+.h-primary-client{
+    font-size: 2rem;
+    padding: 44px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.h-primary{
+    margin-bottom: -10px;
+}
+.h-secondary-center{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: -6px;
+ 
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.center{
+   
+    text-align: center;
+    font-size: 1em;
+    margin-top: -5px;
+  
+}
+
+.h-primary center{
+    font-size: 10px;
+    
+}
+/* Client section */
+.client-item img{
+    height: 50px;
+    
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 36px;
+    
+}
+#client-section{
+    height: 344px;
+    margin-top: -60px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('/project1/images/back12.jpg');
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+.client-item{
+    padding: 10px;
+}
+#client .client-item{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(248, 228, 214);
+   
+}
+/* contect section */
+/* #contect{
+position: relative;
+} */
+#contact ::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/project1/images/bg9.jpeg') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: rgb(253, 252, 252);
+    padding: 9px 20px;
+
+}
+</style>
 </head>
 
 <body>
